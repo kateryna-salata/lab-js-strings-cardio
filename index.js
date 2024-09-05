@@ -7,7 +7,9 @@ const string1 = "My favorite dessert is jello";
 
 // Your code here...
 
-
+let char = "j";
+let index = string1.indexOf(char);
+// console.log(index); //23
 
 
 /*******************************************
@@ -16,6 +18,9 @@ const string1 = "My favorite dessert is jello";
 // Make a new string with the text "COOL" by using only the characters available in the provided string and the bracket notation
 
 const string2 = "ABCDEFGHJKLO";
+const chars = string2[2] + string2[11] + string2[11] + string2[10];
+// console.log(chars); //COOL
+
 
 // Your code here...
 
@@ -28,6 +33,10 @@ const string2 = "ABCDEFGHJKLO";
 // Using the method .repeat() and the provided string, print out the text "NaNaNaNa Batman!" in the console.
 
 const string3 = "Na";
+const result = string3.repeat(4) + " Batman!";
+
+// console.log(result); // NaNaNaNa Batman!
+
 
 // Your code here...
 
@@ -40,6 +49,10 @@ const string3 = "Na";
 // Using the string method .slice(), access and print to the console the name of your favorite fruit from a given string
 
 const fruit = "banana apple mango orange lemon kiwi watermelon grapes pear pineapple";
+const favFruit = fruit.slice(7, 12);
+
+// console.log(favFruit);
+
 
 // Your code here...
 
@@ -56,13 +69,26 @@ const funnyHeadline1 = "Breathing oxygen linked to staying alive";
 const funnyHeadline2 = "Students Cook & Serve Grandparents";
 
 
+
 // Check the first headline
 // Your code here ...
-
+if (funnyHeadline1.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'");
+    
+} else {
+    console.log("The string does not include the word 'oxygen'");
+    
+}
 
 // Check the second headline
 // Your code here ...
-
+if (funnyHeadline2.includes("oxygen")) {
+    console.log("The string includes the word 'oxygen'");
+    
+} else {
+    console.log("The string does not include the word 'oxygen'");
+    
+}
 
 
 /*******************************************
@@ -75,7 +101,8 @@ const string4 = "zEAWrTC9EgtxmK9w1";
 
 // a) Print the string length
 // Your code here ...
-
+console.log(`Length of string is ${string4.length}`)
 
 // b) Print the last character in the string
 // Your code here ...
+console.log(`Last character is "${string4[string4.length - 1]}"`);
